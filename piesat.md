@@ -13,3 +13,16 @@
    redis-cli -h xxx.xxx.xxx.xxx -p 6379
    config set requirepass 密码
 ```
+```
+3. SpringBoot Developer Tools与热部署
+   ```
+   引入依赖：
+   <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+   </dependency>
+   ```
+   Idea设置：
+   3.1 File --> Settings --> Compiler --> Build Project automatically
+   3.2 勾选此项：ctrl + shift + alt + / --> Registry --> Compiler autoMake allow when app running
+```
