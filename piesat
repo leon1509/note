@@ -1,0 +1,5 @@
+```
+1. 下载Docker redis，并启动
+   下载：docker pull redis
+   启动：docker run -p 6379:6379 --name redis -d redis redis-server --appendonly yes
+···
