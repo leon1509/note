@@ -5,4 +5,6 @@
    查看容器输出：docker logs 容器ID
    查看最新前5个容器：docker ps -n 5
    再次执行容器：docker start 容器ID
+   查看容器详细信息：docker inspect 容器ID
+   进入一个已经运行的容器：docker exec -it 容器ID /bin/bash
 ```
