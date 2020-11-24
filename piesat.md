@@ -8,3 +8,8 @@
    查看容器详细信息：docker inspect 容器ID
    进入一个已经运行的容器：docker exec -it 容器ID /bin/bash
 ```
+```
+2. 设置Redis密码
+   redis-cli -h xxx.xxx.xxx.xxx -p 6379
+   config set requirepass 密码
+```
