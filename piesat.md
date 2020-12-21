@@ -25,3 +25,12 @@ Idea设置：
    3.1 File --> Settings --> Compiler --> Build Project automatically
    3.2 勾选此项：ctrl + shift + alt + / --> Registry --> Compiler autoMake allow when app running
 ```
+````
+java -Dfile.encoding=UTF-8 -jar swc-fileserver2.war --server.port=6079 --spring.profiles.active=test
+
+本地：
+java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfile.encoding=UTF-8 -jar -Xms256m -Xmx512m -Xmn256m swc-fileserver.war --server.port=6079 --spring.profiles.active=local
+
+10.1.100.172：
+java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfile.encoding=UTF-8 -jar -Xms256m -Xmx512m -Xmn256m swc-fileserver3.war --server.port=6079 --spring.profiles.active=beta
+````
