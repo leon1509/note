@@ -43,6 +43,7 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfil
    docker network create es_network
 3. 运行ES容器
    docker run -d --name es1 -p 9200:9200 -p 9300:9300 --network es_network -v /d/work/es_volume:/root -e "privileged=true" -e "discovery.type=single-node" elasticsearch
+````
 参数说明：
 |参数|参数说明|
 |:--|:--|
@@ -54,4 +55,3 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfil
 |-e "privileged=true"|配置访问权限|
 |-e "discovery.type=single-node"|指定ElasticSearch部署模式|
 |elasticsearch|指定派生的镜像|
-````
