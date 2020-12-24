@@ -27,3 +27,8 @@
 ````
 https://www.pianshen.com/article/97731377065/
 ````
+
+### 4. IDEA将新建项目上传至GitLab
+````
+https://blog.csdn.net/weixin_30553065/article/details/99217824
+````
