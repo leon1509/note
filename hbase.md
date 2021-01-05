@@ -1,6 +1,7 @@
 ### 在windows7上安装docker和hbase镜像和hadoop镜像
-    - https://www.dazhuanlan.com/2019/09/23/5d881d00c7833/
-    ````
+- https://www.dazhuanlan.com/2019/09/23/5d881d00c7833/
+
+````
     docker pull harisekhon/hbase
     docker run -d -h myhbase -p 2181:2181 -p 8080:8080 -p 8085:8085 -p 9090:9090 -p 
 
@@ -31,5 +32,4 @@
     1 Created table t1
     2 Took 2.6696 seconds
     3 => Hbase::Table - t1
-    ````
-    
+````
