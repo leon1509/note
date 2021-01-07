@@ -55,3 +55,25 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfil
 |-e "privileged=true"|配置访问权限|
 |-e "discovery.type=single-node"|指定ElasticSearch部署模式|
 |elasticsearch|指定派生的镜像|
+
+### 6. 框架集成库
+````
+Mysql、Oracle、SQLServer、PostgreSQL、TiDB（同Mysql）
+ElasticSearch、HBase、
+Lombok、
+Hibernate-validator、
+Redis、
+MongoDB、
+Hutool、
+MinIO、
+Knife4j（Swagger）、
+Mybatis-plus、
+logback
+
+单独搭建：
+XXL-job
+api网关
+ELK
+开源代码质量管理平台：sonarqub
+TiDB
+````
