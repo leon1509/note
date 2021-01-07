@@ -69,6 +69,7 @@ MinIO、
 Knife4j（Swagger）、
 Mybatis-plus、
 logback
+消息队列
 
 单独搭建：
 XXL-job
