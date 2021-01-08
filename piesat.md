@@ -59,17 +59,7 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfil
 ### 6. 框架集成库
 ````
 Mysql、Oracle、SQLServer、PostgreSQL、TiDB（同Mysql）
-ElasticSearch、HBase、
-Lombok、
-Hibernate-validator、
-Redis、
-MongoDB、
-Hutool、
-MinIO、
-Knife4j（Swagger）、
-Mybatis-plus、
-logback
-消息队列
+ElasticSearch、HBase、Lombok、Hibernate-validator、Redis、MongoDB、Hutool、MinIO、Knife4j（Swagger）、Mybatis-plus、logback、RabbitMQ、Activiti、多数据源
 
 单独搭建：
 XXL-job
@@ -77,4 +67,13 @@ api网关
 ELK
 开源代码质量管理平台：sonarqub
 TiDB
+````
+
+### 7. Docker安装PostgreSQL
+````
+拉取镜像：docker pull postgres
+启动镜像：docker run --name mypostgres -d -p 5432:5432 -e POSTGRES_PASSWORD=123456 postgres
+进入容器：docker exec -it postgres psql -U postgres -d postgres
+使用终端命令连接：psql -U username -h ipaddress -d dbname
+查看数据库所有表：select * from pg_tables;
 ````
