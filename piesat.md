@@ -73,7 +73,16 @@ TiDB
 ````
 拉取镜像：docker pull postgres
 启动镜像：docker run --name mypostgres -d -p 5432:5432 -e POSTGRES_PASSWORD=123456 postgres
-进入容器：docker exec -it postgres psql -U postgres -d postgres
+进入容器：docker exec -it mypostgres psql -U postgres -d postgres
 使用终端命令连接：psql -U username -h ipaddress -d dbname
 查看数据库所有表：select * from pg_tables;
 ````
+### 8. Docker安装Oracle 12c
+````
+拉取镜像：docker pull truevoly/oracle-12c
+启动镜像：docker run --name oracle12c -d -p 8088:8080 -p 1521:1521 -v /f/oracle/data:u01/app/oracle truevoly/oracle-12c
+         说明：启动并暴露8088：8080&1521：1521端口，并且挂载宿主机目录 /f/oracle/data 到oracle容器的/u01/app/oracle 目录
+进入容器：docker exec -it oracle12c /bin/bash
+         su - oracle
+         sqlplus / as sysdba
+         GRANT CONNECT,RESOURCE,DBA TO ora_test IDENTIFIED 123456;
