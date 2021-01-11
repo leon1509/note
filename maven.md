@@ -4,9 +4,10 @@
 ---------------------------------
 2. 本地jar包安装到远程仓库
    mvn deploy:deploy-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=11.2.0.4.0 -Dpackaging=jar -Dfile=D:\oracleDB\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar -Durl=http://localhost:8081/repository/maven-3rd-party/ -DrepositoryId=nexus-3rd-party
-
-   配置本地maven的confg.xml配置文件：
-
+   
+   其中：
+groupId，artifactId，version 是maven中jar包的坐标信息，packaging指定包类型，file指定jar包文件的位置，url指定发布到nexus私服上的路径，可以在nexus web管理界面copy，repositoryId是仓库名。
+注意：需要配置Nexus认证信息，在本机的maven的配置文件conf.xml中配置 nexus 认证信息：
    <servers>
       <server>
          <id>maven-public</id>
