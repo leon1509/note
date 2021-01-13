@@ -27,4 +27,9 @@ groupId，artifactId，version 是maven中jar包的坐标信息，packaging指�
 3. 本地jar/pom包安装到本地.m2仓库
    mvn install:install-file -Dfile=ojdbc8-12.2.0.1.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar
    mvn install:install-file -Dfile=xx.pom -DgroupId=com.nero.www -DartifactId=demo -Dversion=0.1.0 -Dpackaging=pom
+
+4. 关于向Nexus私服上传jar/pom失败的问题
+   安装第三方jar到Artifact, 从Artifact的官方上看到其实有很多种方法(请看这里),最简单的就是从Archiva的web 页面上找到Upload Artifact这个功能。
+   使用maven的 deploy:deploy-file 命令时要注意的是：如果要安装的jar和pom是位于本地repository的目录下，这个命令就会出错 (Cannot deploy artifact from the local repository…), 
+   解决方法：将要安装的jar和pom 复制到其它目录再安装，只要不在本地仓库目录就可以。
 ```
