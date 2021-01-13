@@ -106,3 +106,19 @@ RabbitMQ
          su - oracle
          sqlplus / as sysdba
          GRANT CONNECT,RESOURCE,DBA TO ora_test IDENTIFIED 123456;
+````
+### 9. 部署顶级项目pom到私服
+````
+cls&& mvn deploy:deploy-file -Dfile=wrd-ma-spring-boot-parent-1.1.3.pom -DgroupId=cn.piesat.wrd -DartifactId=wrd-ma-spring-boot-pare
+nt -Dversion=1.1.3 -Dpackaging=pom -Durl=http://10.1.4.130:8081/repository/wrd-framework/ -DrepositoryId=wrd-framework
+
+注意：
+      9.1 pom文件不要放在本地仓库.m2中，否则上面的命令将执行失败。
+      9.2 setting.xml文件<servers>部分要加入：
+      <server>
+         <id>wrd-framework</id>
+         <username>admin</username>
+         <password>xxxxxx</password>
+      </server>
+      
+````
