@@ -58,15 +58,35 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=6666,server=y,suspend=n -Dfil
 
 ### 6. 框架集成库
 ````
-Mysql、Oracle、SQLServer、PostgreSQL、TiDB（同Mysql）
-ElasticSearch、HBase、Lombok、Hibernate-validator、Redis、MongoDB、Hutool、MinIO、Knife4j（Swagger）、Mybatis-plus、logback、RabbitMQ、Activiti、多数据源
+Mysql、
+Oracle、
+SQLServer、
+PostgreSQL、
+TiDB（同Mysql）
+ElasticSearch、
+HBase、
+Lombok、
+Hibernate-validator、
+Redis、
+MongoDB、
+Hutool、
+MinIO、
+Knife4j（Swagger）、
+Mybatis-plus、
+logback、
+RabbitMQ、
+Activiti、
+多数据源
 
-单独搭建：
+- 单独搭建：
 XXL-job
 api网关
 ELK
 开源代码质量管理平台：sonarqub
 TiDB
+CodeGenerator
+RabbitMQ
+监控（prometheus）
 ````
 
 ### 7. Docker安装PostgreSQL
