@@ -36,4 +36,40 @@ groupId，artifactId，version 是maven中jar包的坐标信息，packaging指�
    安装第三方jar到Artifact, 从Artifact的官方上看到其实有很多种方法(请看这里),最简单的就是从Archiva的web 页面上找到Upload Artifact这个功能。
    使用maven的 deploy:deploy-file 命令时要注意的是：如果要安装的jar和pom是位于本地repository的目录下，这个命令就会出错 (Cannot deploy artifact from the local repository…), 
    解决方法：将要安装的jar和pom 复制到其它目录再安装，只要不在本地仓库目录就可以。
+
+5. 使用maven打包的时候，会发现外部jar包没打包进依赖，需要在pom.xml进行资源添加：
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>lib</directory>
+                <targetPath>BOOT-INF/lib/</targetPath>
+                <includes>
+                    <include>**/*.jar</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    参考： https://www.cnblogs.com/GuixinChan/p/13164294.html
 ```
