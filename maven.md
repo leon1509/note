@@ -1,4 +1,6 @@
 ```
+注意： pom中的dependencyManagement节点作用是：只是对版本进行管理，不会实际引入jar ！！！
+
 1. 跳过Javadoc
    -Dmaven.javadoc.skip=true
 ---------------------------------
