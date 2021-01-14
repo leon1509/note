@@ -1,6 +1,8 @@
 ```
 注意： pom中的dependencyManagement节点作用是：只是对版本进行管理，不会实际引入jar ！！！
 
+mvn dependency:sources 重新下载项目中依赖的jar包。
+
 1. 跳过Javadoc
    -Dmaven.javadoc.skip=true
 ---------------------------------
