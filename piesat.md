@@ -79,6 +79,7 @@ Activiti、
 多数据源
 
 - 单独搭建：
+MinIO
 XXL-job
 api网关
 ELK
