@@ -23,9 +23,23 @@
       $ git push origin master（或xxxxxxx）
 ````
 
-### 3. 使用git命令 提交多个项目到同一个仓库中
+### 3. 使用 git 提交多个项目到同一个仓库中（https://www.pianshen.com/article/97731377065/）
 ````
-https://www.pianshen.com/article/97731377065/
+1. 在要提交的目录上点击右键 -> Git Bash Here
+2. 在打开的终端依次输入：
+   2.1 git init	// 初始化仓库，项目出现绿色打钩图标，并且生成.git文件夹
+   2.2 git remote add origin ssh://git@git.piesat.cn:27022/ShuiLiDepartment/wrd.git(或https://github.com/leon1509/note.git)	// 把仓库关联到远程地址
+   2.3 git add dictionary1/ dictionary1	// 再分别把多个本地项目上传本地仓库 变成红色感叹号图标
+       git add dictionary2/ dictionary2
+       .......
+   2.4 git commit -m "初始化提交"	// 提交并填写注释
+   2.5 git push origin master		// 把代码推送到远程仓库
+
+   ======== 正常流程结束 ==========
+
+   如果2.5报错，可能是远程仓库中存在部分文件是我们本地仓库不存在的 ，需要先pull下来。
+   2.6 git pull --rebase origin master	// 把原先仓库中的文件pull下来
+   2.7 git push -u origin master	// 再重新提交就可以了
 ````
 
 ### 4. IDEA将新建项目上传至GitLab
