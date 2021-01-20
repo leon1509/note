@@ -1,75 +1,184 @@
 ### 常用网址收藏
 ````
-1. http://www.cnblogs.com/ccmc/p/openresty-web-dev-7.html  openresty 前端开发进阶一之http后端  --- 关键字token
-2. http://lua.ren/topic/136/openresty-%E4%B8%AD%E7%9A%84%E7%AE%80%E6%98%93http%E5%8A%A0%E5%AF%86  OPENRESTY 中的简易HTTP加密
-3. http://www.tuicool.com/articles/NjAJnum  capture + proxy 实现httpclient - KallMeNeo  --- 关键字ngx.req.set_header、Content-Type、proxy_pass、httpclient
-4. http://jinnianshilongnian.iteye.com/blog/2186448   第二章 OpenResty(Nginx+Lua)开发入门   -- 关键字ngx.req.get_headers、ngx.say、ngx.print、ngx.redirect、ngx.escape_uri/ngx.unescape_uri（uri编码解码）、ngx.encode_args/ngx.decode_args（参数编码解码）、ngx.encode_base64/ngx.decode_base64：BASE64编码解码；、ngx.re.match：nginx正则表达式匹配；、Nginx Lua模块指令
+1. openresty 前端开发进阶一之http后端  --- 关键字token
+   http://www.cnblogs.com/ccmc/p/openresty-web-dev-7.html
 
-5. http://blog.csdn.net/wtq1993/article/details/50554107   postman测试web服务时添加json类型的参数   ---关键字 raw、APP客户端、袁野接口
-8. http://homeway.me/2015/07/19/understand-http-about-content-type/    理解HTTP之Content-Type   --- 关键字 application/x-www-form-urlencoded
+2. OPENRESTY 中的简易HTTP加密
+   http://lua.ren/topic/136/openresty-%E4%B8%AD%E7%9A%84%E7%AE%80%E6%98%93http%E5%8A%A0%E5%AF%86
 
-6. https://my.oschina.net/fengnote/blog/288569   Solr In Action 中文版 第一章(一)
-7. https://yq.aliyun.com/articles/44567?spm=5176.100239.blogcont44569.8.rerdYB    一步一步学solr：在开始前我们应该明白什么
+3. capture + proxy 实现httpclient - KallMeNeo  --- 关键字ngx.req.set_header、Content-Type、proxy_pass、httpclient
+   http://www.tuicool.com/articles/NjAJnum
 
-9. http://www.iteye.com/problems/110986 spring mvc 400 Required String parameter 'quizId' is not present 前端参数找不到   --- 关键字 @RequestBody
+4. http://jinnianshilongnian.iteye.com/blog/2186448
+   第二章 OpenResty(Nginx+Lua)开发入门   -- 关键字ngx.req.get_headers、ngx.say、ngx.print、ngx.redirect、ngx.escape_uri/ngx.unescape_uri（uri编码解码）、       ngx.encode_args/ngx.decode_args（参数编码解码）、ngx.encode_base64/ngx.decode_base64：BASE64编码解码；、ngx.re.match：nginx正则表达式匹配；、Nginx Lua模块指令
 
-10. http://web.chacuo.net/netsslbackup   线备份站点SSL证书、获取下载站点SSL证书、ssl certificate backup、获取HTTPS站点证书、获取HTTPS签名密钥
+5. postman测试web服务时添加json类型的参数   ---关键字 raw、APP客户端、袁野接口
+   http://blog.csdn.net/wtq1993/article/details/50554107
 
-*11. http://blog.csdn.net/liaokailin/article/category/5765237  spring boot实战
-*11.1 https://my.oschina.net/dabird/blog/593643    Spring Boot自定义错误页面，Whitelabel Error Page处理方式
-*12. http://www.cnblogs.com/end/archive/2012/10/25/2738818.html  java 下执行mysql 批量插入的四种方法比较
-13. http://blog.codingnow.com/cloud/LuaTips?show_comments=1   Lua 编程技巧
-14. https://blog.eood.cn/nginx_logs 纯手工玩转 Nginx 日志
-15. http://19001989.blog.51cto.com/3447586/702203  Nginx日志文件配置与切割
-16. http://www.shixinke.com/openresty/openresty-ngx-timer  openresty实现在某个固定时间执行一个函数
-17. http://www.aboutyun.com/thread-12882-1-1.html Kafka入门经典教程
-18. http://seanlook.com/2015/05/17/nginx-location-rewrite/  nginx配置location总结及rewrite规则写法
+6. 理解HTTP之Content-Type   --- 关键字 application/x-www-form-urlencoded
+   http://homeway.me/2015/07/19/understand-http-about-content-type/
 
-*19. https://yq.aliyun.com/articles/8532  Aliyun OSS Nginx proxy module（阿里云OSS Nginx 签名代理模块）
-*20. https://github.com/lilien1010/lua-resty-oss-uploader  lua aliyun OSS client[阿里云oss Lua 客户端，]
-21. http://www.jianshu.com/p/9c6295f8666c  spring boot最佳实战2--外部配置
-22. https://my.oschina.net/wangjstu/blog/596605  OpenResty之入门
-22.1 https://www.openresty.com.cn/ms2008-insert-sort.html   Lua 排序算法 - 插入排序
+7. Solr In Action 中文版 第一章(一)
+   https://my.oschina.net/fengnote/blog/288569
 
-23. http://www.ithao123.cn/content-10180260.html  lua 删除key，value table中指定元素
-24. http://swfoo.com/2014/07/11/lua-table-remove-by-key/  Lua table remove by key
-*25. https://segmentfault.com/a/1190000008064728  openresty 前端开发轻量级MVC框架封装一（控制器篇）
-*27. http://zivn.me/2016/02/18/Openresty-path-technique/  巧设 Openresty 包含路径
+8. 一步一步学solr：在开始前我们应该明白什么
+   https://yq.aliyun.com/articles/44567?spm=5176.100239.blogcont44569.8.rerdYB
 
-26. https://blog.likeme.top/blog/wp/460.html  为openresty添加模块及开启nginx的https和http2
-*28. http://jinnianshilongnian.iteye.com/blog/2188113  Web开发实战1——HTTP服务  关键字：异步写入redis async
-29. http://hot66hot.iteye.com/blog/2291916  nginx+lua+kafka实现日志统一收集汇总
-30. https://github.com/doujiang24/lua-resty-kafka  lua_resty_kafka插件
+9. http://www.iteye.com/problems/110986
+   spring mvc 400 Required String parameter 'quizId' is not present 前端参数找不到   --- 关键字 @RequestBody
 
-31. http://blog.csdn.net/isea533/article/details/50281151  Spring Boot 属性配置和使用
-32. https://my.oschina.net/kevinair/blog/708608  Spring Boot DataSource配置
-33. http://chevy.iteye.com/blog/2085989 Jquery chosen动态设置值 select Ajax动态加载数据 设置chosen和获取他们选中的值
-*34. https://www.coder-note.com/questions/4177159/toggle-checkboxes-on-off  jquery开/关切换复选框
-*35. http://blog.csdn.net/langeldep/article/details/9628819 让nginx支持文件上传的几种模式
-*36. http://www.cnblogs.com/zoucaitou/p/4424575.html  MySQL 5.7原生JSON格式支持
-37. https://my.oschina.net/leejun2005/blog/494248  玩转 Nginx 之：使用 Lua 扩展 Nginx 功能
-38. RESTful登录设计（基于Spring及Redis的Token鉴权）: http://www.scienjus.com/restful-token-authorization/
-39. 为Api服务端添加简单的Token鉴权功能，基于Spring MVC : https://github.com/ScienJus/spring-authorization-manager
-40. Spring Boot使用Redis进行消息的发布订阅 : https://www.tianmaying.com/tutorial/springboot-redis-message
-41. Spring Boot使用Druid和监控配置 : http://chittykent.blog.51cto.com/9884528/1856493
-42. Spring-boot-starter-redis操纵redis : https://melody.gitbooks.io/architecture/content/shi_yongspring_-_boot_-_starter_-_redis_cao_zong_r.html
-43. Spring Boot中使用Redis数据库 : http://blog.didispace.com/springbootredis/
-44. SpringMVC上传文件的三种方式 : http://www.cnblogs.com/fjsnail/p/3491033.html
-45. 使用Spring Boot搭建文件上传服务 : http://blog.csdn.net/mn960mn/article/details/50844963
-46. Bootstrap按钮加图标 : http://www.itdadao.com/articles/c15a853326p0.html
-47. Bootstrap弹出框和提示框效果以及代码展示 : http://www.cnblogs.com/landeanfen/p/5022188.html
-48. FreeMarker三目运算符 : http://www.jianshu.com/p/W22XN1
-49. FreeMarker+SpringMVC获取页面使用的内置对象request、session、param : http://www.html580.com/study/233.html
-50. Freemarker 数字输出中的逗号问题 : http://yjh20001015.iteye.com/blog/516225
-51. FreeMarker得到list长度的问题 : http://blog.csdn.net/liuzhengkang/article/details/5992038
-52. freemarker数字默认不加逗号 : http://blog.csdn.net/lizeyang/article/details/19081627
-53. Openresty的lua-resty-mysql实现mysql基本操作 : http://www.shixinke.com/openresty/openresty-lua-resty-mysql-practices
-54. Chosen 中文文档 : http://www.vaikan.com/docs/Chosen/Chosen.htm
-55. Chosen 插件 动态设置+更新选项值 : https://segmentfault.com/a/1190000005868162
-56. SmartWizard插件使用方法 : http://blog.csdn.net/lishuangzhe7047/article/details/43017461
-57. zTree默认选中指定节点并执行事件 : http://www.itdadao.com/articles/c15a305446p0.html
-58. RabbitMQ中文文档 : http://rabbitmq.mr-ping.com/
+10. http://web.chacuo.net/netsslbackup
+    线备份站点SSL证书、获取下载站点SSL证书、ssl certificate backup、获取HTTPS站点证书、获取HTTPS签名密钥
 
+*11. spring boot实战
+     http://blog.csdn.net/liaokailin/article/category/5765237
+   
+*11.1 Spring Boot自定义错误页面，Whitelabel Error Page处理方式
+      https://my.oschina.net/dabird/blog/593643
+
+*12. java下执行mysql 批量插入的四种方法比较
+     http://www.cnblogs.com/end/archive/2012/10/25/2738818.html
+
+13. Lua 编程技巧
+    http://blog.codingnow.com/cloud/LuaTips?show_comments=1
+
+14. 纯手工玩转 Nginx 日志
+    https://blog.eood.cn/nginx_logs
+
+15. Nginx日志文件配置与切割
+    http://19001989.blog.51cto.com/3447586/702203
+
+16. openresty实现在某个固定时间执行一个函数
+    http://www.shixinke.com/openresty/openresty-ngx-timer
+
+17. Kafka入门经典教程
+    http://www.aboutyun.com/thread-12882-1-1.html
+
+18. nginx配置location总结及rewrite规则写法
+    http://seanlook.com/2015/05/17/nginx-location-rewrite/
+
+*19. Aliyun OSS Nginx proxy module（阿里云OSS Nginx 签名代理模块）
+     https://yq.aliyun.com/articles/8532
+
+*20. lua aliyun OSS client[阿里云oss Lua 客户端
+     https://github.com/lilien1010/lua-resty-oss-uploader
+
+21. spring boot最佳实战2--外部配置
+    http://www.jianshu.com/p/9c6295f8666c
+
+22. OpenResty之入门
+    https://my.oschina.net/wangjstu/blog/596605
+
+23. Lua 排序算法 - 插入排序
+    https://www.openresty.com.cn/ms2008-insert-sort.html
+
+24. lua 删除key，value table中指定元素
+    http://www.ithao123.cn/content-10180260.html
+
+25. Lua table remove by key
+    http://swfoo.com/2014/07/11/lua-table-remove-by-key/
+
+*26. openresty 前端开发轻量级MVC框架封装一（控制器篇）
+     https://segmentfault.com/a/1190000008064728
+
+*27. 巧设 Openresty 包含路径
+     http://zivn.me/2016/02/18/Openresty-path-technique/
+
+28. 为openresty添加模块及开启nginx的https和http2
+    https://blog.likeme.top/blog/wp/460.html
+
+*29. Web开发实战1——HTTP服务  关键字：异步写入redis async
+     http://jinnianshilongnian.iteye.com/blog/2188113
+
+30. nginx+lua+kafka实现日志统一收集汇总
+    http://hot66hot.iteye.com/blog/2291916
+
+31. lua_resty_kafka插件
+    https://github.com/doujiang24/lua-resty-kafka
+
+32. Spring Boot 属性配置和使用
+    http://blog.csdn.net/isea533/article/details/50281151
+
+33. Spring Boot DataSource配置
+    https://my.oschina.net/kevinair/blog/708608
+
+34. Jquery chosen动态设置值 select Ajax动态加载数据 设置chosen和获取他们选中的值
+    http://chevy.iteye.com/blog/2085989
+
+*35. jquery开/关切换复选框
+     https://www.coder-note.com/questions/4177159/toggle-checkboxes-on-off
+
+*36. 让nginx支持文件上传的几种模式
+     http://blog.csdn.net/langeldep/article/details/9628819
+
+*37. MySQL 5.7原生JSON格式支持
+     http://www.cnblogs.com/zoucaitou/p/4424575.html
+
+38. 玩转 Nginx 之：使用 Lua 扩展 Nginx 功能
+    https://my.oschina.net/leejun2005/blog/494248
+
+39. RESTful登录设计（基于Spring及Redis的Token鉴权）
+    http://www.scienjus.com/restful-token-authorization/
+
+40. 为Api服务端添加简单的Token鉴权功能，基于Spring MVC
+    https://github.com/ScienJus/spring-authorization-manager
+
+41. Spring Boot使用Redis进行消息的发布订阅
+    https://www.tianmaying.com/tutorial/springboot-redis-message
+
+42. Spring Boot使用Druid和监控配置
+    http://chittykent.blog.51cto.com/9884528/1856493
+
+43. Spring-boot-starter-redis操纵redis
+    https://melody.gitbooks.io/architecture/content/shi_yongspring_-_boot_-_starter_-_redis_cao_zong_r.html
+
+44. Spring Boot中使用Redis数据库
+    http://blog.didispace.com/springbootredis/
+
+45. SpringMVC上传文件的三种方式
+    http://www.cnblogs.com/fjsnail/p/3491033.html
+
+46. 使用Spring Boot搭建文件上传服务
+    http://blog.csdn.net/mn960mn/article/details/50844963
+
+47. Bootstrap按钮加图标
+    http://www.itdadao.com/articles/c15a853326p0.html
+
+48. Bootstrap弹出框和提示框效果以及代码展示
+    http://www.cnblogs.com/landeanfen/p/5022188.html
+
+49. FreeMarker三目运算符
+    http://www.jianshu.com/p/W22XN1
+
+50. FreeMarker+SpringMVC获取页面使用的内置对象request、session、param
+    http://www.html580.com/study/233.html
+
+51. Freemarker 数字输出中的逗号问题
+    http://yjh20001015.iteye.com/blog/516225
+
+52. FreeMarker得到list长度的问题
+    http://blog.csdn.net/liuzhengkang/article/details/5992038
+
+53. freemarker数字默认不加逗号
+    http://blog.csdn.net/lizeyang/article/details/19081627
+
+54. Openresty的lua-resty-mysql实现mysql基本操作
+    http://www.shixinke.com/openresty/openresty-lua-resty-mysql-practices
+
+55. Chosen 中文文档
+    http://www.vaikan.com/docs/Chosen/Chosen.htm
+
+56. Chosen 插件 动态设置+更新选项值
+    https://segmentfault.com/a/1190000005868162
+
+57. SmartWizard插件使用方法
+    http://blog.csdn.net/lishuangzhe7047/article/details/43017461
+
+58. zTree默认选中指定节点并执行事件
+    http://www.itdadao.com/articles/c15a305446p0.html
+
+59. RabbitMQ中文文档
+    http://rabbitmq.mr-ping.com/
 
 ==============三本书籍===================
 第一本Docker书：51.33(china-pub)
