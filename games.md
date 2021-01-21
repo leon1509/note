@@ -9,6 +9,7 @@
 |7|宝可梦剑盾||￥245|
 
 ### ns魔尼七三
+````
 参考：https://tieba.baidu.com/p/6651127651
 网盘地址： https://pan.baidu.com/s/1JxHdJrEdPf78ngtzKMYmVw   65os
           三个文件： 
@@ -16,3 +17,4 @@
           捐赠YuzuEAXXXX.7z
           xx.x.x keys.7z
 贴吧： https://tieba.baidu.com/home/main?un=WPQ03&ie=utf-8&id=tb.1.aba03bbe.Q_B27zHQv-QlcyMm8LDsSg?t=1609493053&fr=pb
+````
