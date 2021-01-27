@@ -17,4 +17,18 @@
           捐赠YuzuEAXXXX.7z
           xx.x.x keys.7z
 贴吧： https://tieba.baidu.com/home/main?un=WPQ03&ie=utf-8&id=tb.1.aba03bbe.Q_B27zHQv-QlcyMm8LDsSg?t=1609493053&fr=pb
+
+=======================
+
+wwx.lanzoux.com/b01hiv22h
+
+1. 下载 pan.baidu.com/s/1JxHdJrEdPf78ngtzKMYmVw 提取码：65os 里面的
+   捐赠YuzuEAxxxx.7z  -- Yuzu收费版
+   xx.x.x keys.7z     -- 复制到 C:\Users\你的用户名\AppData\Roaming\yuzu\keys 目录下
+   user.zip           -- 放进yuzu模拟器目录下
+
+2. 此时进去yuzu模拟器，就可以添加游戏了
+3. 设置模拟器：
+   https://tieba.baidu.com/p/6530919300
+
 ````
