@@ -2,6 +2,9 @@
 ```
    下载：docker pull redis
    启动：docker run -p 6379:6379 --name redis -d redis redis-server --appendonly yes
+        或启动 5.0.10
+        docker pull redis:5.0.10
+        docker run -p 16379:6379 --name redis5.0.10 -d redis:5.0.10 redis-server --appendonly yes
    查看容器输出：docker logs 容器ID
    查看最新前5个容器：docker ps -n 5
    再次执行容器：docker start 容器ID
