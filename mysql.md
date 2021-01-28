@@ -101,3 +101,13 @@
 
 15. 删除MySQL： https://juejin.cn/post/6844904069786517517
 ````
+
+````
+systemctl restart mysqld
+systemctl stop mysqld
+mysql -uroot -p
+yum install redis
+systemctl start redis
+systemctl enable redis
+
+````
