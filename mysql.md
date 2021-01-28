@@ -99,4 +99,5 @@
     | character_sets_dir | /usr/share/mysql/charsets/ |
     +--------------------------+----------------------------+
 
+15. 删除MySQL： https://juejin.cn/post/6844904069786517517
 ````
