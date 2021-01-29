@@ -1,3 +1,29 @@
+#### Stream应用
+````
+    public static void main(String[] args) {
+        Stream<Integer> m1 = mapSequence();
+        m1.forEach(System.out::println);
+
+        changeString();
+    }
+
+    // 对x计算它的平方
+    protected static Stream<Integer> mapSequence() {
+        Stream<Integer> s = Stream.of(1, 2, 3, 4, 5);
+        Stream<Integer> s2 = s.map(n -> n * n);
+        return s2;
+    }
+
+    // 利用map()，不但能完成数学计算，对于字符串操作，以及任何Java对象都是非常有用的
+    protected static void changeString() {
+        List.of("  Apple ", " pear ", " ORANGE", " BaNaNa ")
+                .stream()
+                .map(String::trim) // 去空格
+                .map(String::toUpperCase) // 变大写
+                .forEach(System.out::println); // 打印
+    }
+````
+
 #### 统计男生数量的优雅实现
 ````
 Stream
