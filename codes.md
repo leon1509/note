@@ -1,4 +1,4 @@
-#### Stream应用
+#### Stream - 平方计算 & 字符操作（去空格、变大写）
 ````
     public static void main(String[] args) {
         Stream<Integer> m1 = mapSequence();
@@ -24,7 +24,7 @@
     }
 ````
 
-#### 统计男生数量的优雅实现
+#### Stream - 统计男生数量的优雅实现
 ````
 Stream
 Java 8 API添加了一个新的抽象称为流Stream，可以让你以一种声明的方式处理数据。使得代码调用起来更加优雅～ 直接来看代码：
@@ -60,6 +60,27 @@ public static void main(String[] args) {
         System.out.println("男生个数 = " + boyCount);
 }
 相比与 传统的 For 循环，更推荐大家使用 stream 遍历。 stream 流的链式调用，还有许多骚操作，如 sorted, map, collect等操作符，可以省去不必要if-else，count等判断逻辑。
+````
+
+#### Stream - 从一组给定的LocalDate中过滤掉工作日，以便得到休息日
+````
+public class Main {
+    public static void main(String[] args) {
+        Stream.generate(new LocalDateSupplier())
+                .limit(31)
+                .filter(ldt -> ldt.getDayOfWeek() == DayOfWeek.SATURDAY || ldt.getDayOfWeek() == DayOfWeek.SUNDAY)
+                .forEach(System.out::println);
+    }
+}
+
+class LocalDateSupplier implements Supplier<LocalDate> {
+    LocalDate start = LocalDate.of(2020, 1, 1);
+    int n = -1;
+    public LocalDate get() {
+        n++;
+        return start.plusDays(n);
+    }
+}
 ````
 
 #### 数组排序
