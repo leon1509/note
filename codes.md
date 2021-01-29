@@ -1,3 +1,12 @@
+#### Stream - 去除偶数(filter应用) | https://www.liaoxuefeng.com/wiki/1252599548343744/1322402956967969
+````
+    public static void main(String[] args) {
+        IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+                .filter(n -> n % 2 != 0)
+                .forEach(System.out::println);
+    }
+````
+
 #### Stream - 平方计算 & 字符操作（去空格、变大写）
 ````
     public static void main(String[] args) {
