@@ -126,7 +126,3 @@ nt -Dversion=1.1.3 -Dpackaging=pom -Durl=http://10.1.4.130:8081/repository/wrd-f
       </server>
       
 ````
-### 10. Git
-```
-ssh-keygen -t rsa -C "l.t...s....@p..s...com.cn"
-```
