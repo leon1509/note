@@ -46,3 +46,14 @@
 ````
 https://blog.csdn.net/weixin_30553065/article/details/99217824
 ````
+
+### 5. 添加git用户邮箱和用户名
+````
+git config --global user.email "lutiansheng@piesat.com.cn"
+git config --global user.name "lutiansheng"
+````
+
+### 6. 生成git密钥
+````
+ssh-keygen -t rsa -C "l.t...s....@p..s...com.cn"
+````
