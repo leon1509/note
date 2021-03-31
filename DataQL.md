@@ -13,19 +13,23 @@ var query = @@sql(username)<%
  var userInfo = query(${username}) => [
     { "id","nickname","username", "sex", "birthday", "status" }
 ]
-//webData.setHeader("Content-Type", "application/json; charset=UTF-8");
+//webData.setHeader("Content-Type", "application/json; charset=UTF-8")
 ///
 var header = webData.headerMap()
 ////
+
+var sexConvert = (sex) -> {
+    return (sex == 'F' ? '男' : '女');
+}
 
 return userInfo => {
     "id",
     "nickname",
     "username",
-    "sex": (sex == 'F') ? '男' : '女',
+    "sex": sexConvert(sex),
     "birthday": dateTimeUtil.format(birthday, 'yyyy-MM-dd'),
-    "status",
-    "header": header
+    "status"//,
+    //"header": header
 }
 
 ==== 参数 ====
