@@ -2,7 +2,8 @@
 ````
   1.1 Idea中，项目右键-->Git-->Manage Remotes，减号删除项目与git的关联关系。
   1.2 进入项目目录，删除.git目录
-  1.3 Idea中，File-->Settings-->Version Control，减号删除右边的关联关系。
+  1.3 Idea中，File-->Settings-->Version Control，减号删除右边的关联关系。(windows)
+      Idea中，IntelliJ IDEA --> Preferences --> Version Control，减号删除右边的关联关系。(MacOS)
 ````
 
 ### 2. 删除gitlab或github上的多余目录
