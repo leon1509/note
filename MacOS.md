@@ -10,6 +10,6 @@
   以上三个命令都执行一遍（不知道哪个有效）
 ````
 ````
-[安装多版本的JDK](https://github.com/leon1509/note/blob/master/jdk.md)
+![安装多版本的JDK](https://github.com/leon1509/note/blob/master/jdk.md)
 
 ````
