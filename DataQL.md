@@ -1,3 +1,21 @@
+-- 1. 解决hasor4.2.3返回数据乱码
+```
+在application.properties中添加
+server.servlet.encoding.enabled=true
+server.servlet.encoding.force=true
+server.servlet.encoding.charset=utf-8
+或
+application.yml中
+server:
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: utf-8
+
+```
+
+-- 2. 示例
 ```
 hint FRAGMENT_SQL_OPEN_PACKAGE = "off"
 
@@ -50,3 +68,4 @@ return userInfo => {
   "result"        : "@resultData"
 }
 ```
+--------------------
