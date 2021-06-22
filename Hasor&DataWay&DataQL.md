@@ -17,6 +17,7 @@ server:
 
 -- 2. 示例
 ```
+// 返回值不拆开，无论返回单条还是多条数据，都以 List/Map 形式返回
 hint FRAGMENT_SQL_OPEN_PACKAGE = "off"
 
 import 'net.hasor.dataql.fx.basic.DateTimeUdfSource' as dateTimeUtil
