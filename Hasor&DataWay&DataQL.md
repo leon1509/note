@@ -23,7 +23,6 @@ import 'net.hasor.dataql.fx.basic.DateTimeUdfSource' as dateTimeUtil
 import 'net.hasor.dataql.fx.web.WebUdfSource' as webData;
 
 var query = @@sql(username)<%
-    set character_set_connection = 'utf8';
     select * from user where username = #{username}
 %>
 // return query()
