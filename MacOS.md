@@ -12,3 +12,12 @@
 ````
 [安装多版本的JDK](https://github.com/leon1509/note/blob/master/jdk.md '安装多版本的JDK')
 ````
+
+### Mac从其它渠道接收的文件，权限部分带有Finder标签@符号，如何去除？
+
+````
+使用xattr命令：
+查看文件接收渠道：xattr -l 目录[文件]
+去除文件Finder标签：xattr -c 文件[目录]
+去除目录及子目录/文件下的所有Finder标签：xattr -cr 目录/
+````
