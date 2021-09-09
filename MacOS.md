@@ -6,7 +6,13 @@ zip - openjdk-16.0.2_windows-x64_bin.zip | split -b 25600k - openjdk-16.0.2.zip.
 25600k表示压缩后每个小文件的尺寸，25600k=25M
 最后面的是压缩后的文件前缀，命令执行完后会在后面自动添加aa、ab、ac。。。。
 
-在windows中将上面压缩后的小文件解压，首先将后缀aa这些改为001、002。。。。然后用压缩软件解压即可。
+在windows中将上面压缩后的小文件解压：
+1. 方法一：首先将后缀aa这些改为001、002。。。。然后用压缩软件解压即可。
+2. 方法二：
+   # 将分卷合并
+   copy /B file.zip.001 + file.zip.002 + file.zip.003 + file.zip.004 file.zip
+   # 调用 7-Zip 工具解压合并后的文件
+   7z x file.zip
 ````
 
 ### ARM架构的 apple M1 安装 Homebrew 和 Homebrew cask
