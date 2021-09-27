@@ -1,6 +1,5 @@
 # 1. 内网yum私服
 
-[TOC]
 
 为应对在政务或其它内网使用Linux部署系统不便，特编写此教程。
 
@@ -9,7 +8,7 @@
 一、准备一台笔记本电脑，硬盘至少200G+。
 
     安装与生产环境相同版本的CentOS操作系统。
-	同时安装nginx、httpd或python环境中至少一种（一般情况下，系统自带python，如果没有安装，请单独安装）。
+    同时安装nginx、httpd或python环境中至少一种（一般情况下，系统自带python，如果没有安装，请单独安装）。
 
 
 二、首先将该笔记本电脑连接公网，在最大挂载的盘下创建目录（命名随意，本教程假设为/home/yumdata）。
@@ -19,43 +18,43 @@
 
 ````
     # 安装createrepo和reposync组件
-	$  yum install createrepo reposync
-	# 注意：如果安装过程中，出现如下提示：
-	`
-	No package reposync available.
-	Nothing to do
-   `
-	# 解决方法为：安装 yum-utils，命令如下：
-	$ yum install yum-utils
+    $  yum install createrepo reposync
+    # 注意：如果安装过程中，出现如下提示：
+    `
+    No package reposync available.
+    Nothing to do
+    `
+    # 解决方法为：安装 yum-utils，命令如下：
+    $ yum install yum-utils
 ````
 ---
 四、创建yum软件包资源库
 
 ````
     $  cd /home/yumdata
-	# 1. 下载 base 目录包
-	$ reposync --repoid=base
-	# 2. 下载 updates 目录包
-	$ reposync --repoid=updates
-	# 3. 下载 extras 目录包
-	$ reposync --repoid=extras
-	# 4. 下载 epel 目录包
-	$ reposync --repoid=epel
-	# 以上下载yum软件包资源库时间较长，因此该项工作需要提前做好。
+    # 1. 下载 base 目录包
+    $ reposync --repoid=base
+    # 2. 下载 updates 目录包
+    $ reposync --repoid=updates
+    # 3. 下载 extras 目录包
+    $ reposync --repoid=extras
+    # 4. 下载 epel 目录包
+    $ reposync --repoid=epel
+    # 以上下载yum软件包资源库时间较长，因此该项工作需要提前做好。
 ````
 ---
 五、生成yum软件包资源库源（元）数据
 
 ````
     $ cd /home/yumdata
-	# 1. 生成base目录软件包源（元）数据
-	$ createrepo --update base/
-	# 2. 生成updates目录软件包源（元）数据
-	$ createrepo --update updates/
-	# 3. 生成extras目录软件包源（元）数据
-	$ createrepo --update extras/
-	# 4. 生成epel目录软件包源（元）数据
-	$ createrepo --update epel/
+    # 1. 生成base目录软件包源（元）数据
+    $ createrepo --update base/
+    # 2. 生成updates目录软件包源（元）数据
+    $ createrepo --update updates/
+    # 3. 生成extras目录软件包源（元）数据
+    $ createrepo --update extras/
+    # 4. 生成epel目录软件包源（元）数据
+    $ createrepo --update epel/
 ````
 ---
 六、启动http文件浏览服务
@@ -63,8 +62,8 @@
    方便起见，本示例采用python作为http服务器（nginx和apache httpd请自行参考网上教程）。
 ````
     $  cd /home/yumdata
-	# 在80端口，以/home/yumdata为服务根目录，启动http服务
-	$  python3 -m http.server 80
+    # 在80端口，以/home/yumdata为服务根目录，启动http服务
+    $  python3 -m http.server 80
 ````
    效果见下图：
    ![20210927144700.jpg](/uploads/projects/wrd_dev_spec/16a89af51487ee03.jpg "20210927144700.jpg")
@@ -93,13 +92,13 @@
 ````
     # 以root用户身份登录或使用sudo（本示例以root身份讲解）
     ## cd /etc/yum.repos.d/
-	# 创建bak目录，并将当前目录下的所有文件移至bak目录中
-	## mkdir bak
-	## mv .repo* bak
-	# 再将bak目录下的CentOS-Base.repo复制到当前目录进行编辑
-	## cp bak/CentOS-Base.repo .
-	# 编辑CentOS-Base.repo文件内容
-	## vim CentOS-Base.repo
+    # 创建bak目录，并将当前目录下的所有文件移至bak目录中
+    ## mkdir bak
+    ## mv .repo* bak
+    # 再将bak目录下的CentOS-Base.repo复制到当前目录进行编辑
+    ## cp bak/CentOS-Base.repo .
+    # 编辑CentOS-Base.repo文件内容
+    ## vim CentOS-Base.repo
 ````
 内容如下：
 
