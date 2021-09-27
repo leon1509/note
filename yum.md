@@ -65,9 +65,6 @@
     # 在80端口，以/home/yumdata为服务根目录，启动http服务
     $  python3 -m http.server 80
 ````
-   效果见下图：
-   ![20210927144700.jpg](/uploads/projects/wrd_dev_spec/16a89af51487ee03.jpg "20210927144700.jpg")
- PS：请忽略端口号
 
 ---
 
