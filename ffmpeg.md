@@ -1,10 +1,13 @@
 ### 流媒体服务器
 ````
 https://github.com/aler9/rtsp-simple-server
-支持rtsp和rtmp：
+
+支持以rtsp（默认端口8854）和rtmp（默认端口1935）推流：
     - rtsp://10.1.4.144:8554/stream
     - rtmp://10.1.4.144:1935/mystream
-    
+
+以rtsp和rtmp形式发布流后，都可以用HLS方式访问（默认端口是8888）：http://10.1.4.144:8888/mystream
+
 支持windows、linux、macOS
 
 ````
