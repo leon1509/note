@@ -1,3 +1,14 @@
+### 流媒体服务器
+````
+https://github.com/aler9/rtsp-simple-server
+支持rtsp和rtmp：
+    - rtsp://10.1.4.144:8554/stream
+    - rtmp://10.1.4.144:1935/mystream
+    
+支持windows、linux、macOS
+
+````
+
 ### Failed to update header with correct duration |Failed to update header with correct filesize 错误如何解决
 ````
 ffmpeg -re -i xx.mp4 -c copy -f flv -flvflags no_duration_filesize rtmp://127.0.0.1:1935/stream/
