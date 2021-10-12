@@ -23,6 +23,13 @@ ffmpeg -re -i 我的真朋友\ 02.mp4 -vcodec libx264 -vprofile baseline -acodec
 其它推流方式：cat example.mp4 | ffmpeg -re -i pipe:0 -c:v copy -c:a copy -f flv rtmp://127.0.0.1:1935/live/
 ````
 
+### RTSP和RTMP推流（示例）
+````
+推rtsp： ffmpeg -re -stream_loop -1 -i 1.mp4 -c copy -f rtsp rtsp://10.1.4.144:8554/stream
+推rtmp： ffmpeg -re -stream_loop -1 -i 1.mp4 -vcodec copy -acodec copy -f flv rtmp://127.0.0.1:1935/stream/
+
+````
+
 ### 视频压缩
 ````
 视频压缩方法1： ffmpeg -i 彩妆.mp4 -vcodec libx264 -crf 24 cz1.mp4  -- 比特率自动随编码器
