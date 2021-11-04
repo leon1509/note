@@ -12,6 +12,13 @@ https://github.com/aler9/rtsp-simple-server
 
 ````
 
+### RTSP和RTMP推流（示例）
+````
+推rtsp： ffmpeg -re -stream_loop -1 -i 1.mp4 -c copy -f rtsp rtsp://10.1.4.144:8554/stream
+推rtmp： ffmpeg -re -stream_loop -1 -i 1.mp4 -vcodec copy -acodec copy -f flv rtmp://127.0.0.1:1935/stream/
+
+````
+
 ### Failed to update header with correct duration |Failed to update header with correct filesize 错误如何解决
 ````
 ffmpeg -re -i xx.mp4 -c copy -f flv -flvflags no_duration_filesize rtmp://127.0.0.1:1935/stream/
@@ -37,12 +44,6 @@ ffmpeg -re -i 我的真朋友\ 02.mp4 -vcodec libx264 -vprofile baseline -acodec
 其它推流方式：cat example.mp4 | ffmpeg -re -i pipe:0 -c:v copy -c:a copy -f flv rtmp://127.0.0.1:1935/live/
 ````
 
-### RTSP和RTMP推流（示例）
-````
-推rtsp： ffmpeg -re -stream_loop -1 -i 1.mp4 -c copy -f rtsp rtsp://10.1.4.144:8554/stream
-推rtmp： ffmpeg -re -stream_loop -1 -i 1.mp4 -vcodec copy -acodec copy -f flv rtmp://127.0.0.1:1935/stream/
-
-````
 
 ### 视频压缩
 ````
