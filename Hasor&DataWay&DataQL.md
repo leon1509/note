@@ -74,3 +74,10 @@ return userInfo => {
 ```
 https://juejin.cn/post/6844904162015068173
 ```
+
+--------------------
+
+-- 4. Dataway 整合 Swagger2，让 API 管理更顺畅
+```
+https://my.oschina.net/ta8210/blog/4293622
+```
