@@ -1,3 +1,8 @@
+### 连接多个mp4文件
+````
+ffmpeg -f concat -safe 0 -i <(for f in ./file_*.mp4; do echo "file '$PWD/$f'"; done) -c copy output.mp4
+````
+
 ### 流媒体服务器
 ````
 https://github.com/aler9/rtsp-simple-server
