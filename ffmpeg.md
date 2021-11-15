@@ -80,3 +80,8 @@ ffmpeg -i input.mkv -vf subtitles=input.mkv output.mp4
 
 ffmpeg -i 02.mkv -vf subtitles=02.mkv -vcodec libx264 -crf 24 002.mp4
 ````
+
+### CentOS8安装ffmpeg
+````
+https://www.cnblogs.com/architectforest/p/12807683.html
+````
