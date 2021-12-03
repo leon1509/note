@@ -1,3 +1,10 @@
+### 查看媒体文件元数据信息
+````
+ffprobe -select_streams v -show_entries format=duration,size,bit_rate,filename -show_streams -v quiet -of csv="p=0" -of json -i test.mp4
+
+输出的是json数据。
+````
+
 ### 连接多个mp4文件
 ````
 ffmpeg -f concat -safe 0 -i <(for f in ./file_*.mp4; do echo "file '$PWD/$f'"; done) -c copy output.mp4
