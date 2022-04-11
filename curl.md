@@ -8,3 +8,8 @@ curl -H 'X-Auth-Options:1e7904f32c4fcfd59b8a524d1bad1d8a.qg0J9zG*FIkBk^vo' -XPOS
 -- GET请求，添加Header
 curl -H 'X-Auth-Options:1e7904f32c4fcfd59b8a524d1bad1d8a.qg0J9zG*FIkBk^vo' http://api.edu-pad.com.cn/test_db
 ````
+
+````
+-- wget等价命令
+wget -q -O- baidu.com
+````
