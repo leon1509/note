@@ -1,3 +1,93 @@
+# gitlib常用操作
+
+Command line instructions
+
+Git global setup
+````
+git config --global user.name "逯天生"
+git config --global user.email "lutiansheng@piesat.com.cn"
+````
+
+Create a new repository
+````
+git clone ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+cd pie_hydr_alg
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+````
+
+Existing folder
+````
+cd existing_folder
+git init
+git remote add origin ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+````
+
+（接上）修改文件或目录内容再传：
+````
+git add .
+git commit -m "注释"
+git push
+````
+
+Existing Git repository
+````
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+git push -u origin --all
+git push -u origin --tags
+````
+
+# 忽略.DS_Store文件，并删除已经上传的.DS_Store文件
+
+全局设置忽略
+虽然每个项目配.gitignore文件可以成功，但是每个项目都需要配，嗯，有点烦。我们可以在git的全局进行配置来忽略.DS_Store文件。
+
+设置之前我们先看下现在的git config配置情况（git config官方文档说明）：
+````
+$ git config --list
+````
+实际上git配置情况可以在 ~/.gitconfig 文件中查看。
+````
+$ vi ~/.gitconfig
+````
+通过 :q! 退出后，我们需要建立一个文件，把需要全局忽略的文件路径写入其中。该文件起名为.gitignore_global：
+
+````
+$ touch ~/.gitignore_global
+````
+然后对这个文件进行修改。
+
+````
+# Mac OS
+**/.DS_Store
+````
+然后对git进行全局设置，让git忽略.gitignore_global中的所有文件：
+````
+$ git config --global core.excludesfile ~/.gitignore_global
+````
+这样就不用每个git目录都设置忽略.DS_Store文件了！
+
+删除已经上传到仓库里的.DS_Store文件：
+描述：gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
+
+解决方法就是先把本地缓存删除（改变成未track状态），然后再提交:
+````
+git rm -r --cached .
+git add .
+git commit -m "删除.DS_Store"
+git push
+````
+
+
+------ 以下为旧的经验，只供参考 -------
+
 ### 1. 删除项目与git的关联关系（Idea 2020.3版本）
 ````
   1.1 Idea中，项目右键-->Git-->Manage Remotes，减号删除项目与git的关联关系。
