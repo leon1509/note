@@ -4,13 +4,13 @@ Command line instructions
 
 Git global setup
 ````
-git config --global user.name "逯天生"
-git config --global user.email "lutiansheng@piesat.com.cn"
+git config --global user.name "中文名"
+git config --global user.email "xxxx@xxxx.com.cn"
 ````
 
 Create a new repository
 ````
-git clone ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+git clone ssh://git@git.xxxx.cn:7022/xxxx/project.git
 cd pie_hydr_alg
 touch README.md
 git add README.md
@@ -22,7 +22,7 @@ Existing folder
 ````
 cd existing_folder
 git init
-git remote add origin ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+git remote add origin ssh://git@git.xxxx.cn:7022/xxxx/project.git
 git add .
 git commit -m "Initial commit"
 git push -u origin master
@@ -39,7 +39,7 @@ Existing Git repository
 ````
 cd existing_repo
 git remote rename origin old-origin
-git remote add origin ssh://git@git.piesat.cn:27022/ShuiLiDepartment/pie_hydr_alg.git
+git remote add origin ssh://git@git.xxxx.cn:7022/xxxx/project.git
 git push -u origin --all
 git push -u origin --tags
 ````
