@@ -92,3 +92,8 @@ ffmpeg -i 02.mkv -vf subtitles=02.mkv -vcodec libx264 -crf 24 002.mp4
 ````
 https://www.cnblogs.com/architectforest/p/12807683.html
 ````
+
+### webm格式转成mp4
+````
+ffmpeg -i input.webm -vcodec h264 -acodec aac output.mp4
+````
