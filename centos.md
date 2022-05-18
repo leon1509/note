@@ -1,3 +1,10 @@
+#### CentOS7 设置开机默认不启动图形界面
+````
+systemctl set-default multi-user.target   -- 命令行方式启动
+systemctl set-default graphical.target    -- 图形方式启动
+````
+以上两条命令均需要root权限执行。执行完毕后重启操作系统即可。
+
 #### CentOS7 防火墙开放端口
 ````
 1. 永久的开放需要的端口
