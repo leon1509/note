@@ -1,3 +1,9 @@
+
+### webm格式转成mp4(重新使用h264和aac编码)
+````
+ffmpeg -i input.webm -vcodec h264 -acodec aac output.mp4
+````
+
 ### 查看媒体文件元数据信息
 ````
 ffprobe -select_streams v -show_entries format=duration,size,bit_rate,filename -show_streams -v quiet -of csv="p=0" -of json -i test.mp4
@@ -93,10 +99,6 @@ ffmpeg -i 02.mkv -vf subtitles=02.mkv -vcodec libx264 -crf 24 002.mp4
 https://www.cnblogs.com/architectforest/p/12807683.html
 ````
 
-### webm格式转成mp4
-````
-ffmpeg -i input.webm -vcodec h264 -acodec aac output.mp4
-````
 
 ========== ffmpeg 参数 ===================
 
